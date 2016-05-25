@@ -10,7 +10,7 @@ def main():
         )
     )
     enabled = module.params['enabled']
-    module.exit_json(changed=True, something_else=12345)
+    module.exit_json(changed=True, msg="haha\nbooya")
 
 if __name__ == '__main__':
     main()
