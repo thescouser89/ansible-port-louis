@@ -1,0 +1,10 @@
+---
+# This playbook is for playing only
+# Authors:
+# Dustin Kut Moy Cheung <dcheung@redhat.com>
+
+- hosts: localhost
+  name: testing
+  tasks:
+    - name: haha
+      test_dcheung: enabled=false name=dustin

@@ -1,0 +1,4 @@
+---
+
+- name: Copy secret generate script to remote server
+  script: python test.py
