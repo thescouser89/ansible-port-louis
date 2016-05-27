@@ -6,5 +6,6 @@
 - hosts: localhost
   name: testing
   tasks:
-    - name: haha
-      test_dcheung: enabled=false name=dustin
+
+    - name: clone configuration
+      test_dcheung: path=[here,you,are]

@@ -5,12 +5,11 @@ import json
 def main():
     module = AnsibleModule(
         argument_spec = dict(
-            name      = dict(required=True),
-            enabled   = dict(required=True, type='bool'),
+          path=dict(required=True, type='list'),
         )
     )
-    enabled = module.params['enabled']
-    module.exit_json(changed=True, msg="haha\nbooya")
+    enabled = module.params['path']
+    module.exit_json(changed=True, msg=str(enabled))
 
 if __name__ == '__main__':
     main()
